@@ -11,35 +11,34 @@ const Profesi({ Key? key }) : super(key: key);
         backgroundColor: Colors.blue,
       ),
 
-      body: SingleChildScrollView( // untuk membuat halaman dapat di scroll
-        padding: const EdgeInsets.all(10), // memberikan padding (jarak) di semua sisi 
+      body: SingleChildScrollView( 
+        padding: const EdgeInsets.all(10), 
         child: Column(
           children: [
 
             Card(
-              elevation: 3, // mengatur shadow (bayangan) pada card
-              margin: const EdgeInsets.only(bottom: 20), // memberikan margin (jarak) di bawah card saja
-              child: Column( // membuat kolom untuk menampilkan gambar dan teks
-                crossAxisAlignment: CrossAxisAlignment.start, // mengatur posisi teks agar rata kiri
+              elevation: 3, 
+              margin: const EdgeInsets.only(bottom: 20), 
+              child: Column( 
+                crossAxisAlignment: CrossAxisAlignment.start, 
                 children: [
-                  Image.network( // menampilkan gambar dari internet
+                  Image.network( 
                     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqdBfIkofa6-VU6hbdZSXn6jqGWAI3ynGzCS-kfXgylMM06-_nQYuGoTM&s=10',
-                    height: 160, // mengatur tinggi gambar
-                    width: double.infinity, // mengatur lebar gambar agar memenuhi lebar card
+                    height: 160, 
+                    width: double.infinity, 
                     fit: BoxFit.cover, 
                   ),
-                  Padding( // memberi jarak supaya teks judul tidak terlalu mepet ke tepi card.
-                    padding: EdgeInsets.fromLTRB(8, 6, 8, 2), // mengatur jarak di 4 sisi yang berbeda
+                  Padding( 
+                    padding: EdgeInsets.fromLTRB(8, 6, 8, 2), 
                     child: Text(
-                      'Guru PPPK dialihkan ke pemerintah pusat – Apa maknanya?',
-                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16,), // mengatur gaya tampilan teks
+                      'Guru PPPK dialihkan ke pemerintah pusat - Apa maknanya?',
                     ),
                   ),
                   const Padding(
-                    padding: EdgeInsets.fromLTRB(8, 0, 8, 8), // jarak untuk teks ringkasan berita di bawah judul
+                    padding: EdgeInsets.fromLTRB(8, 0, 8, 8), 
                     child: Text(
                       'Rencana pemindahan status kepegawaian guru dengan perjanjian kerja (PPPK) dari pemerintah daerah ke pemerintah pusat dinilai para guru hanya sebagai solusi jangka pendek karena tak menyentuh akar permasalahan.',
-                      style: TextStyle(fontSize: 13, color: Color.fromARGB(255, 32, 29, 29),), //mengatur gaya tampilan teks
+                      style: TextStyle(fontSize: 13, color: Color.fromARGB(255, 32, 29, 29),), 
                     ),
                   ),
                 ],
