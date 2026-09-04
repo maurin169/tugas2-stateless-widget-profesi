@@ -32,6 +32,7 @@ const Profesi({ Key? key }) : super(key: key);
                     padding: EdgeInsets.fromLTRB(8, 6, 8, 2), 
                     child: Text(
                       'Guru PPPK dialihkan ke pemerintah pusat - Apa maknanya?',
+                      style: TextStyle(fontSize: 13, color: Color.fromARGB(255, 32, 29, 29),), 
                     ),
                   ),
                   const Padding(
